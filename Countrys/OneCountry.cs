@@ -40,7 +40,7 @@ namespace Countrys
 
         private void btnAddRegion_Click(object sender, EventArgs e)
         {
-
+            new PostRegion(_country.Id).Show();
         }
     }
 }

@@ -33,8 +33,8 @@ namespace Countrys
         {
             CountryDto country = new CountryDto();
             country.Title = txtTitle.Text;
-            country.Code = txtCode.Text;
-            country.ShortTitle = txtShort.Text;
+            country.Code = txtShort.Text;
+            country.ShortTitle = txtCode.Text;
             country.ImageURl = txtURL.Text;
 
             string str = await _fromAPI.Post(country);
