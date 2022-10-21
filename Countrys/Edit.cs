@@ -43,7 +43,7 @@ namespace Countrys
 
             string str = await _fromAPI.Put(int.Parse(lblID.Text),country);
             MessageBox.Show(str);
-            
+            this.Close();
 
         }
     }

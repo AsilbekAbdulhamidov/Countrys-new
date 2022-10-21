@@ -51,7 +51,7 @@
             // 
             this.lblCode.AutoSize = true;
             this.lblCode.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCode.Location = new System.Drawing.Point(34, 144);
+            this.lblCode.Location = new System.Drawing.Point(34, 120);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(84, 27);
             this.lblCode.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.lblSHort.AutoSize = true;
             this.lblSHort.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSHort.Location = new System.Drawing.Point(34, 88);
+            this.lblSHort.Location = new System.Drawing.Point(34, 74);
             this.lblSHort.Name = "lblSHort";
             this.lblSHort.Size = new System.Drawing.Size(84, 27);
             this.lblSHort.TabIndex = 2;
@@ -78,9 +78,9 @@
             // 
             // pnl1
             // 
-            this.pnl1.Location = new System.Drawing.Point(34, 192);
+            this.pnl1.Location = new System.Drawing.Point(34, 166);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(478, 481);
+            this.pnl1.Size = new System.Drawing.Size(478, 618);
             this.pnl1.TabIndex = 5;
             // 
             // btnAddRegion

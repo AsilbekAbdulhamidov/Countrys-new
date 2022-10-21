@@ -40,6 +40,9 @@ namespace Countrys.RegionForms
             string str = await _fromAPI.PostRegion(dto);
             MessageBox.Show(str);
 
+            this.Close();
+            new PostRegion(_id).Close();
+
         }
     }
 }

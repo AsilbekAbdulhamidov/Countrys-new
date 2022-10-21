@@ -39,6 +39,7 @@ namespace Countrys
 
             string str = await _fromAPI.Post(country);
             MessageBox.Show(str);
+            this.Close();
 
         }
 

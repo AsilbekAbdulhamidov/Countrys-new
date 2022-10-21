@@ -26,7 +26,7 @@ namespace Countrys
 
             foreach (var item in _country.Regions)
             {
-                addPanel(item,item.Id);
+                addPanel(item, item.Id);
             }
         }
 

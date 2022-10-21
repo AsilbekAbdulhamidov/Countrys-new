@@ -39,7 +39,7 @@ namespace Countrys.RegionForms
 
         private void Clik_edit(object sender, EventArgs e)
         {
-            //new Edit(Region )
+            new EditRegion(conunrtyId, _region).Show();
         }
 
         private async void clik_delete(object sender, EventArgs e)
