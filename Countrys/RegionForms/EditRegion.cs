@@ -10,34 +10,34 @@ using System.Windows.Forms;
 
 namespace Countrys.RegionForms
 {
-    public partial class PostRegion : Form
+    public partial class EditRegion : Form
     {
-        private readonly int _id;
+        private readonly int _idCon;
         private readonly string _url;
         private readonly FromAPI _fromAPI;
         private readonly HttpClient _client;
         private readonly Region _region;
-        public PostRegion(int id)
+       
+
+        public EditRegion(int id, Region region)
         {
-            _client= new HttpClient();
+            _region = region;
+            _client = new HttpClient();
             _url = "https://localhost:7276/api/Region";
             _fromAPI = new FromAPI(_client, _url);
-            _id = id;
+            _idCon = id;
+            lblIDCon.Text = _idCon.ToString();
             InitializeComponent();
-            lblIDCon.Text = _id.ToString();
         }
-        
-
-        
 
         private async void button2_Click(object sender, EventArgs e)
         {
             RegionDto dto = new RegionDto();
             dto.Title = txtTitle.Text;
             dto.Code = txtShort.Text;
-            dto.CountryId = _id;
+            dto.CountryId = _idCon;
 
-            string str = await _fromAPI.PostRegion(dto);
+            string str = await _fromAPI.PutRegion(_region.Id, dto);
             MessageBox.Show(str);
 
         }

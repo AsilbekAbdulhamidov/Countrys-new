@@ -79,6 +79,14 @@ namespace Countrys
             return response.ReasonPhrase;
         }
 
+        public async Task<string> PutRegion(int id, RegionDto country)
+        {
+            var json = JsonConvert.SerializeObject(country);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await _client.PutAsync(_url + "/" + id.ToString(), data);
+
+            return response.ReasonPhrase;
+        }
 
     }
 }

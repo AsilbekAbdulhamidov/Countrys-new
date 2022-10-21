@@ -26,14 +26,14 @@ namespace Countrys
 
             foreach (var item in _country.Regions)
             {
-                addPanel(item);
+                addPanel(item,item.Id);
             }
         }
 
-        private void addPanel(Region region)
+        private void addPanel(Region region, int id)
         {
            
-            RegionCon usr = new RegionCon(region);
+            RegionCon usr = new RegionCon(region, id);
             usr.Dock = DockStyle.Top;
             pnl1.Controls.Add(usr);
         }

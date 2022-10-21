@@ -16,10 +16,12 @@ namespace Countrys.RegionForms
         private readonly HttpClient _client;
         private readonly string _url;
         private readonly FromAPI _fromAPI;
+        private readonly int conunrtyId;
 
 
-        public RegionCon(Region region)
+        public RegionCon(Region region, int id)
         {
+            conunrtyId = id;
             _client = new HttpClient();
             _url = "https://localhost:7276/api/Region";
             _fromAPI = new FromAPI(_client, _url);
@@ -37,7 +39,7 @@ namespace Countrys.RegionForms
 
         private void Clik_edit(object sender, EventArgs e)
         {
-
+            //new Edit(Region )
         }
 
         private async void clik_delete(object sender, EventArgs e)
